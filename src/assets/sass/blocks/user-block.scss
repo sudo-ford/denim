@@ -1,0 +1,44 @@
+.user-block {
+    grid-area: 3/3/2/4;
+    align-self: center;
+    justify-self: end;
+    position: relative;
+}
+
+.user-block__search {
+    display: none;
+    padding: 3px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+    border: 2px solid $dark;
+    border-radius: 5px;
+
+    outline: none;
+
+    &:focus {
+        border-color: $hover;
+    }
+
+    &--block {
+        display: block;
+    }
+}
+
+.user-block__basket {
+    margin-left: 10px;
+
+    &:hover path {
+        stroke: $hover;
+        transition: .2s;
+    }
+}
+
+.user-block__label {
+    transition: .2s;
+    &:hover path,
+    &--active path {
+        stroke: $hover;
+    }
+}

@@ -1,0 +1,15 @@
+.logo {
+    grid-area: 2/2/1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo__link {
+    font-weight: 800;
+    font-size: 24px;
+
+    &:hover {
+        color: $hover;
+        transition: .2s;
+    }
+}
