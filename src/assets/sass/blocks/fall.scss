@@ -1,0 +1,52 @@
+.fall {
+    display: grid;
+
+    background: repeating-linear-gradient(45deg, $dark, $dark 2px, transparent 2px, transparent 10px);
+}
+
+.fall__text {
+    margin: 15px 15px 0 15px;
+    padding: 40px 0;
+
+    text-align: center;
+
+    background-color: $gray;
+}
+
+.fall__subtitle {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    color: #727a82;
+}
+
+.fall__title {
+    margin-bottom: 30px;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.fall__link {
+    display: inline-block;
+    padding: 24px 35px;
+
+    font-weight: 700;
+    color: #fff;
+
+    background-color: #000;
+    transition: .2s;
+
+    &:hover {
+        background-color: #fff;
+        color: $hover;
+    }
+}
+
+.fall__image {
+    width: 100%;
+}
+
+.fall__images {
+    margin-bottom: -4px;
+}
