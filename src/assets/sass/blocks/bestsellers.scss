@@ -1,0 +1,50 @@
+.bestsellers {
+    display: grid;
+    padding: 60px 0;
+}
+
+.bestsellers__title {
+    margin-bottom: 40px;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.bestsellers__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.bestsellers__item {
+    margin-bottom: 15px;
+}
+
+.bestsellers__name {
+    display: block;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+}
+
+.bestsellers__price {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bestsellers__link {
+    margin: 0 auto;
+    font-weight: 500;
+
+    border-bottom: 2px solid $dark;
+
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+        border-color: $hover;
+    }
+}
