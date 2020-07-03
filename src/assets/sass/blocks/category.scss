@@ -1,0 +1,46 @@
+.category {
+    display: grid;
+    padding: 60px 0;
+}
+
+.category__title {
+    margin-bottom: 40px;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.category__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+    margin-bottom: 30px;
+}
+
+.category__item {
+    justify-self: center;
+
+    &:nth-child(3) {
+        align-self: end;
+    }
+}
+
+.category__name {
+    display: block;
+
+    font-weight: 500;
+}
+
+.category__link {
+    margin: 0 auto;
+    font-weight: 500;
+
+    border-bottom: 2px solid $dark;
+
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+        border-color: $hover;
+    }
+}
