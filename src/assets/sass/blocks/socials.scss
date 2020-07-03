@@ -1,0 +1,12 @@
+.socials__link {
+    display: inline-block;
+    margin-right: 30px;
+
+    & path {
+        transition: .2s;
+    }
+
+    &:hover path {
+        fill: $hover;
+    }
+}
