@@ -1,0 +1,22 @@
+.breadcrumbs {
+    margin-bottom: 30px;
+}
+
+.breadcrumbs__link {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .5;
+    transition: .2s;
+
+    &--active {
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.breadcrumbs__slash {
+    margin: 0 10px;
+}

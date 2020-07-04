@@ -1,0 +1,211 @@
+.filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 25px;
+
+    transition: 2s;
+
+    &--dn {
+        display: none;
+    }
+}
+
+.filter__reset {
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+    }
+}
+
+.filter__title {
+    margin: 24px auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter__close {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+    }
+}
+
+.filter__button {
+    grid-column: 1/-1;
+    width: 100%;
+    padding: 18px 0;
+
+    position: relative;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+
+    border-top: 1px solid $light;
+    border-bottom: 1px solid $light;
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+    }
+
+    &::after {
+        content: "";
+        width: 18px;
+        height: 11px;
+
+        position: absolute;
+        top: 20px;
+        right: 0;
+
+        background: url("../img/filter-arrow.png") no-repeat;
+
+        transition: .2s;
+    }
+
+    &--open {
+        padding: 16px;
+
+        font-size: 18px;
+
+        border: 2px solid $dark;
+
+        &::after {
+            right: 20px;
+        }
+    }
+
+    &--opened {
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.filter__fieldset {
+    grid-column: 1/-1;
+    border: none;
+}
+
+.filter__color {
+    display: none;
+}
+
+#color1:checked ~ .filter__color-label--1 {
+    box-shadow: 0 0 0 3px #B0C3C7;
+}
+
+#color2:checked ~ .filter__color-label--2 {
+    box-shadow: 0 0 0 3px #3B6392;
+}
+
+#color3:checked ~ .filter__color-label--3 {
+    box-shadow: 0 0 0 3px #BFC3C8;
+}
+
+#color4:checked ~ .filter__color-label--4 {
+    box-shadow: 0 0 0 3px #2D2E2E;
+}
+
+#color5:checked ~ .filter__color-label--5 {
+    box-shadow: 0 0 0 3px #ECECEC;
+}
+
+#color6:checked ~ .filter__color-label--6 {
+    box-shadow: 0 0 0 3px #4193DA;
+}
+
+.filter__color-label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+    
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: .2s;
+
+    &--1 {
+        background-color: #B0C3C7;
+    }
+
+    &--2 {
+        background-color: #3B6392;
+    }
+
+    &--3 {
+        background-color: #BFC3C8;
+    }
+
+    &--4 {
+        background-color: #2D2E2E;
+    }
+
+    &--5 {
+        background-color: #ECECEC;
+    }
+
+    &--6 {
+        background-color: #4193DA;
+    }
+}
+
+.filter__collection {
+    display: none;
+}
+
+.filter__collection-label {
+    margin-right: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .5;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+#collection1:checked ~ label[for="collection1"] {
+    opacity: 1;
+}
+
+#collection2:checked ~ label[for="collection2"] {
+    opacity: 1;
+}
+
+#collection3:checked ~ label[for="collection3"] {
+    opacity: 1;
+}
+
+#collection4:checked ~ label[for="collection4"] {
+    opacity: 1;
+}
+
+.filter__submit {
+    grid-column: 1/-1;
+    padding: 27px 0;
+    margin-top: 50px;
+
+    color: #fff;
+    font-weight: 700;
+
+    background-color: $dark;
+
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+        background-color: #fff;
+    }
+}

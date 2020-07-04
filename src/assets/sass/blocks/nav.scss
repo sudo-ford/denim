@@ -1,6 +1,12 @@
 .nav {
     grid-area: 3/1/2/3;
     align-self: center;
+
+    transition: .5s;
+
+    &--dn {
+        display: none;
+    }
 }
 
 .nav__item {

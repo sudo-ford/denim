@@ -2,4 +2,80 @@
     display: grid;
     grid-template-rows: 60px 60px;
     grid-template-columns: 1fr 1fr 1fr;
+
+    transition: .5s;
+
+    &--row {
+        grid-template-rows: 60px 0;
+    }
+}
+
+.header__button {
+    align-self: center;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 10px;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background-color: $dark;
+        box-shadow: 0 5px 0 0 $dark, 0 10px 0 0 $dark;
+        transition: .2s;
+    }
+
+    &:hover::before {
+        background-color: $hover;
+        box-shadow: 0 5px 0 0 $hover, 0 10px 0 0 $hover;
+    }
+
+    &:active::before {
+        opacity: 0.3;
+    }
+}
+
+.header__button--close {
+    align-self: center;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    transition: .5s;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background-color: $hover;
+    }
+
+    &:active::before,
+    &:active::after {
+        opacity: 0.3;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
 }

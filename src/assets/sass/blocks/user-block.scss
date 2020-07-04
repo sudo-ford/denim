@@ -3,6 +3,10 @@
     align-self: center;
     justify-self: end;
     position: relative;
+
+    &--top {
+        grid-area: 2/3/1/4;
+    }
 }
 
 .user-block__search {
