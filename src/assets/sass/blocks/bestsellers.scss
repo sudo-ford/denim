@@ -22,11 +22,20 @@
     margin-bottom: 15px;
 }
 
+.bestsellers__item-link {
+
+    &:hover > .bestsellers__name {
+        color: $hover;
+    }
+}
+
 .bestsellers__name {
     display: block;
     margin-bottom: 10px;
 
     font-weight: 500;
+
+    transition: .2s;
 }
 
 .bestsellers__price {

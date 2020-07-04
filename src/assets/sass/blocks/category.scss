@@ -19,6 +19,7 @@
 
 .category__item {
     justify-self: center;
+    transition: .2s;
 
     &:nth-child(3) {
         align-self: end;
@@ -29,6 +30,7 @@
     display: block;
 
     font-weight: 500;
+    transition: .2s;
 }
 
 .category__link {
@@ -42,5 +44,12 @@
     &:hover {
         color: $hover;
         border-color: $hover;
+    }
+}
+
+.category__item-link {
+
+    &:hover > .category__name {
+        color: $hover;
     }
 }
