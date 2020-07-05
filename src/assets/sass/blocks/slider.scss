@@ -1,0 +1,48 @@
+.slider {
+    display: grid;
+    padding: 40px 15px;
+
+    position: relative;
+}
+
+.slider__img {
+    margin: 0 auto;
+}
+
+.slider__button {
+    display: block;
+    width: 10px;
+    height: 18px;
+
+    position: absolute;
+
+    &:disabled path {
+        stroke: $gray;
+    }
+
+    &:disabled:hover path {
+        stroke: $gray;
+    }
+
+    &--prev {
+        top: 50%;
+        left: 0;
+
+        transform: rotate(180deg) translateY(50%);
+    }
+
+    &--next {
+        top: 50%;
+        right: 0;
+
+        transform: translateY(-50%);
+    }
+
+    & path {
+        transition: .2s;
+    }
+
+    &:hover path {
+        stroke: $hover;
+    }
+}

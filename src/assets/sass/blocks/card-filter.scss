@@ -1,0 +1,135 @@
+.card-filter__wrapper {
+    padding: 40px 0;
+    background-color: $light;
+}
+
+.card-filter {
+    display: grid;
+}
+
+.card-filter__title {
+    margin-bottom: 30px;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-filter__description {
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-filter__fieldset {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+
+    border: none;
+}
+
+.card-filter__color {
+    display: none;
+}
+
+#card-color1:checked ~ .card-filter__color-label--1 {
+    box-shadow: 0 0 0 3px #B0C3C7;
+}
+
+#card-color2:checked ~ .card-filter__color-label--2 {
+    box-shadow: 0 0 0 3px #3B6392;
+}
+
+#card-color3:checked ~ .card-filter__color-label--3 {
+    box-shadow: 0 0 0 3px #BFC3C8;
+}
+
+.card-filter__color-label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: .2s;
+
+    &--1 {
+        background-color: #B0C3C7;
+    }
+
+    &--2 {
+        background-color: #3B6392;
+    }
+
+    &--3 {
+        background-color: #BFC3C8;
+    }
+}
+
+.card-filter__size {
+    display: none;
+}
+
+.card-filter__size-label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: .5;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+#size1:checked ~ label[for="size1"] {
+    opacity: 1;
+}
+
+#size2:checked ~ label[for="size2"] {
+    opacity: 1;
+}
+
+#size3:checked ~ label[for="size3"] {
+    opacity: 1;
+}
+
+#size4:checked ~ label[for="size4"] {
+    opacity: 1;
+}
+
+#size5:checked ~ label[for="size5"] {
+    opacity: 1;
+}
+
+.card-filter__price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-filter__link {
+    justify-self: start;
+    padding: 27px 55px;
+    margin-top: 35px;
+
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+
+    background-color: $dark;
+
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
+        background-color: #fff;
+    }
+}
