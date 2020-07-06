@@ -5,7 +5,7 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
-const rigger = require("gulp-rigger");  //склеивание js файлов
+//const rigger = require("gulp-rigger");  //склеивание js файлов
 const uglify = require("gulp-uglify-es").default;  //сжатие js файлов
 const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
@@ -92,7 +92,7 @@ const css = () => {
 const js = () => {
     return src(path.src.js, {base: './src/assets/js/'})
         .pipe(plumber())
-        .pipe(rigger())
+        // .pipe(rigger())
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))

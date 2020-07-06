@@ -9,6 +9,18 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 40px;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        text-align: center;
+
+        & .footer__item:first-child {
+            width: 100%;
+        }
+    }
 }
 
 .footer__link {

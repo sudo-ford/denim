@@ -74,6 +74,10 @@ p {
 
     margin: 0 auto;
     padding: 0 15px;
+    
+    @media (min-width: $tablet) {
+        padding: 0 45px;
+    }
 }
 
 .page {

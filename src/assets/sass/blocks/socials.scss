@@ -1,3 +1,9 @@
+.socials {
+    @media (min-width: $tablet) {
+        text-align: center;
+    }
+}
+
 .socials__link {
     display: inline-block;
     margin-right: 30px;

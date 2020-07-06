@@ -6,6 +6,11 @@
     display: grid;
     padding-top: 35px;
     padding-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
 .intro__image-wrapper {
@@ -23,6 +28,11 @@
         left: -15px;
 
         background: repeating-linear-gradient(45deg, $dark, $dark 2px, transparent 2px, transparent 10px);
+
+        @media (min-width: $tablet) {
+            width: 141px;
+            height: 104px;
+        }
     }
 
     &::after {
@@ -35,6 +45,15 @@
         right: -15px;
 
         background: repeating-linear-gradient(-45deg, $dark, $dark 2px, transparent 2px, transparent 10px);
+
+        @media (min-width: $tablet) {
+            width: 141px;
+            height: 104px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 0;
     }
 }
 
@@ -45,6 +64,14 @@
 
 .intro__text {
     text-align: center;
+
+    @media (min-width: $tablet) {
+        grid-area: 2/1/1/2;
+        justify-self: end;
+        align-self: end;
+
+        text-align: left;
+    }
 }
 
 .intro__subtitle {
@@ -54,6 +81,10 @@
     font-weight: 400;
     color: #727A82;
     text-align: center;
+
+    @media (min-width: $tablet) {
+        text-align: left;
+    }
 }
 
 .intro__title {
@@ -64,6 +95,10 @@
     line-height: 86px;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 60px;
+    }
 }
 
 .intro__link {
@@ -82,5 +117,40 @@
     &:hover {
         background-color: $light;
         color: $dark;
+    }
+}
+
+.intro__links {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        grid-column: 1/-1;
+    }
+}
+
+.intro__button {
+    margin-right: auto;
+
+    & path {
+        transition: .2s;
+    }
+
+    &:hover path {
+        stroke: $hover;
+    }
+}
+
+.intro__social {
+    display: inline-block;
+    margin-left: 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+    transition: .2s;
+
+    &:hover {
+        color: $hover;
     }
 }

@@ -2,6 +2,10 @@
     display: grid;
 
     background: repeating-linear-gradient(45deg, $dark, $dark 2px, transparent 2px, transparent 10px);
+
+    @media (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .fall__text {
@@ -11,6 +15,15 @@
     text-align: center;
 
     background-color: $gray;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        align-content: center;
+        margin: 20px 20px 20px 0;
+        padding: 50px 0 50px 50px;
+
+        text-align: left;
+    }
 }
 
 .fall__subtitle {
@@ -41,6 +54,10 @@
         background-color: #fff;
         color: $hover;
     }
+
+    @media (min-width: $tablet) {
+        margin-right: auto;
+    }
 }
 
 .fall__image {
@@ -49,4 +66,8 @@
 
 .fall__images {
     margin-bottom: -4px;
+
+    @media (min-width: $tablet) {
+        grid-area: 2/1/1/2;
+    }
 }

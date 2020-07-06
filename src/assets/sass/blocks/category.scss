@@ -1,6 +1,10 @@
 .category {
     display: grid;
     padding: 60px 0;
+
+    @media (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .category__title {
@@ -15,6 +19,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 30px;
     margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        grid-area: 3/1/2/3;
+    }
 }
 
 .category__item {
@@ -23,6 +31,12 @@
 
     &:nth-child(3) {
         align-self: end;
+    }
+}
+
+.category__image {
+    @media (min-width: $tablet) {
+        margin-bottom: 25px;
     }
 }
 
@@ -44,6 +58,10 @@
     &:hover {
         color: $hover;
         border-color: $hover;
+    }
+
+    @media (min-width: $tablet) {
+        margin: 0 0 35px auto;
     }
 }
 
