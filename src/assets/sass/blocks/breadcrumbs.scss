@@ -1,5 +1,9 @@
 .breadcrumbs {
     margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .breadcrumbs__link {

@@ -71,6 +71,9 @@ p {
 .container {
     width: 100%;
     max-width: 1200px;
+    display: grid;
+
+    position: relative;
 
     margin: 0 auto;
     padding: 0 15px;
@@ -101,5 +104,6 @@ p {
 @import "blocks/slider.scss";
 @import "blocks/card-filter.scss";
 @import "blocks/card-catalog.scss";
+@import "blocks/intro-catalog.scss";
 
 /* Vendor libs */

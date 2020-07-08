@@ -3,10 +3,27 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 25px;
 
+    position: absolute;
+    z-index: 10;
+
+    background-color: #fff;
+
     transition: 2s;
 
     &--dn {
         display: none;
+    }
+
+    @media (min-width: $tablet) {
+        width: 206px;
+        grid-template-columns: 1fr;
+        padding-bottom: 0;
+
+        right: 45px;
+        top: 115px;
+
+        border: 2px solid $dark;
+        border-top: none;
     }
 }
 
@@ -20,12 +37,35 @@
     &:hover {
         color: $hover;
     }
+
+    @media (min-width: $tablet) {
+        grid-row: 8/9;
+        margin-right: 0;
+
+        padding: 27px 0;
+
+        color: $dark;
+        font-weight: 500;
+
+        background-color: #fff;
+
+        transition: .2s;
+
+        &:hover {
+            color: $hover;
+            background-color: $dark;
+        }
+    }
 }
 
 .filter__title {
     margin: 24px auto;
     font-size: 18px;
     font-weight: 700;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .filter__close {
@@ -37,6 +77,10 @@
 
     &:hover {
         color: $hover;
+    }
+
+    @media (min-width: $tablet) {
+        display: none;
     }
 }
 
@@ -71,6 +115,10 @@
         background: url("../img/filter-arrow.png") no-repeat;
 
         transition: .2s;
+
+        @media (min-width: $tablet) {
+            right: 15px;
+        }
     }
 
     &--open {
@@ -83,12 +131,21 @@
         &::after {
             right: 20px;
         }
+
+        @media (min-width: $tablet) {
+            width: 206px;
+            margin-left: auto;
+        }
     }
 
     &--opened {
         &::after {
             transform: rotate(180deg);
         }
+    }
+
+    @media (min-width: $tablet) {
+        padding-left: 15px;
     }
 }
 
@@ -159,6 +216,11 @@
     &--6 {
         background-color: #4193DA;
     }
+
+    @media (min-width: $tablet) {
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
 }
 
 .filter__collection {
@@ -174,6 +236,16 @@
 
     cursor: pointer;
     transition: .2s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    @media (min-width: $tablet) {
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
 }
 
 #collection1:checked ~ label[for="collection1"] {
