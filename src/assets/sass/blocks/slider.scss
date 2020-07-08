@@ -3,10 +3,28 @@
     padding: 40px 15px;
 
     position: relative;
+
+    @media (min-width: $tablet) {
+        padding: 40px 0 0 0;
+    }
+}
+
+.slider__images {
+    margin: 0 auto;
 }
 
 .slider__img {
     margin: 0 auto;
+}
+
+.slider__previews {
+    display: none;
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        margin-top: 20px;
+    }
 }
 
 .slider__button {
@@ -44,5 +62,9 @@
 
     &:hover path {
         stroke: $hover;
+    }
+
+    @media (min-width: $tablet) {
+        display: none;
     }
 }

@@ -43,62 +43,102 @@
                 </a>
             </div>
         </header>
-
-        <div class="slider">
-            <img src="assets/img/slider-1-mobile.jpg" alt="" class="slider__img">
-            <button class="slider__button slider__button--prev button-reset" type="button" disabled>
-                <svg width="11" height="18" viewBox="0 0 11 18" fill="none">
-                    <path d="M1 17L9 9L1 1" stroke="#151C22" stroke-width="2"/>
-                </svg>
-            </button>
-            <button class="slider__button slider__button--next button-reset" type="button">
-                <svg width="11" height="18" viewBox="0 0 11 18" fill="none">
-                    <path d="M1 17L9 9L1 1" stroke="#151C22" stroke-width="2"/>
-                </svg>
-            </button>
-        </div>
     </div>
 
-    <div class="card-filter__wrapper">
+    <div class="slider-and-filter-wrapper">
         <div class="container">
-            <form action="#" class="card-filter">
-                <h2 class="card-filter__title">Overalls</h2>
-                <p class="card-filter__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
-                <fieldset class="card-filter__fieldset">
-                    Color <br>
-                    <input class="card-filter__color" type="radio" name="color" id="card-color1" checked>
-                    <label for="card-color1" class="card-filter__color-label card-filter__color-label--1"></label>
-                    <input class="card-filter__color" type="radio" name="color" id="card-color2">
-                    <label for="card-color2" class="card-filter__color-label card-filter__color-label--2"></label>
-                    <input class="card-filter__color" type="radio" name="color" id="card-color3">
-                    <label for="card-color3" class="card-filter__color-label card-filter__color-label--3"></label>
-                </fieldset>
+            <div class="slider">
 
-                <fieldset class="card-filter__fieldset">
-                    Size <br>
-                    <input class="card-filter__size" type="radio" name="size" id="size1">
-                    <label for="size1" class="card-filter__size-label">XS</label>
-                    <input class="card-filter__size" type="radio" name="size" id="size2">
-                    <label for="size2" class="card-filter__size-label">S</label>
-                    <input class="card-filter__size" type="radio" name="size" id="size3" checked>
-                    <label for="size3" class="card-filter__size-label">M</label>
-                    <input class="card-filter__size" type="radio" name="size" id="size4">
-                    <label for="size4" class="card-filter__size-label">L</label>
-                    <input class="card-filter__size" type="radio" name="size" id="size5">
-                    <label for="size5" class="card-filter__size-label">XL</label>
-                </fieldset>
+                <picture class="slider__images">
+                    <source media="(max-width: 767px)" srcset="assets/img/slider-1-mobile.jpg">
+                    <source media="(max-width: 1365px)" srcset="assets/img/slider-1-tablet.jpg">
+                    <img src="assets/img/slider-1.jpg" alt="" class="slider__img">
+                </picture>
 
-                <span class="card-filter__price">$ 160</span>
+                <div class="slider__previews">
+                    <a href="#" class="slider__preview-link">
+                        <picture class="slider__preview">
+                            <source media="(max-width: 1365px)" srcset="assets/img/slider-2-tablet.jpg">
+                            <img src="assets/img/slider-2.jpg" alt="" class="slider__preview-img">
+                        </picture>
+                    </a>
 
-                <a href="#" class="card-filter__link">Add to cart</a>
-            </form>
+                    <a href="#" class="slider__preview-link">
+                        <picture class="slider__preview">
+                            <source media="(max-width: 1365px)" srcset="assets/img/slider-3-tablet.jpg">
+                            <img src="assets/img/slider-3.jpg" alt="" class="slider__preview-img">
+                        </picture>
+                    </a>
+
+                    <a href="#" class="slider__preview-link">
+                        <picture class="slider__preview">
+                            <source media="(max-width: 1365px)" srcset="assets/img/slider-4-tablet.jpg">
+                            <img src="assets/img/slider-4.jpg" alt="" class="slider__preview-img">
+                        </picture>
+                    </a>
+
+                    <a href="#" class="slider__preview-link">
+                        <picture class="slider__preview">
+                            <source media="(max-width: 1365px)" srcset="assets/img/slider-5-tablet.jpg">
+                            <img src="assets/img/slider-5.jpg" alt="" class="slider__preview-img">
+                        </picture>
+                    </a>
+                </div>
+
+                <button class="slider__button slider__button--prev button-reset" type="button" disabled>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none">
+                        <path d="M1 17L9 9L1 1" stroke="#151C22" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="slider__button slider__button--next button-reset" type="button">
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none">
+                        <path d="M1 17L9 9L1 1" stroke="#151C22" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="card-filter__wrapper">
+            <div class="container">
+                <form action="#" class="card-filter">
+                    <h2 class="card-filter__title">Overalls</h2>
+                    <p class="card-filter__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back pockets.</p>
+                    <fieldset class="card-filter__fieldset">
+                        Color <br>
+                        <input class="card-filter__color" type="radio" name="color" id="card-color1" checked>
+                        <label for="card-color1" class="card-filter__color-label card-filter__color-label--1"></label>
+                        <input class="card-filter__color" type="radio" name="color" id="card-color2">
+                        <label for="card-color2" class="card-filter__color-label card-filter__color-label--2"></label>
+                        <input class="card-filter__color" type="radio" name="color" id="card-color3">
+                        <label for="card-color3" class="card-filter__color-label card-filter__color-label--3"></label>
+                    </fieldset>
+
+                    <fieldset class="card-filter__fieldset">
+                        Size <br>
+                        <input class="card-filter__size" type="radio" name="size" id="size1">
+                        <label for="size1" class="card-filter__size-label">XS</label>
+                        <input class="card-filter__size" type="radio" name="size" id="size2">
+                        <label for="size2" class="card-filter__size-label">S</label>
+                        <input class="card-filter__size" type="radio" name="size" id="size3" checked>
+                        <label for="size3" class="card-filter__size-label">M</label>
+                        <input class="card-filter__size" type="radio" name="size" id="size4">
+                        <label for="size4" class="card-filter__size-label">L</label>
+                        <input class="card-filter__size" type="radio" name="size" id="size5">
+                        <label for="size5" class="card-filter__size-label">XL</label>
+                    </fieldset>
+
+                    <span class="card-filter__price">$ 160</span>
+
+                    <a href="#" class="card-filter__link">Add to cart</a>
+                </form>
+            </div>
         </div>
     </div>
 
     <div class="container">
         <div class="card-catalog">
             <h2 class="card-catalog__title">You may also like</h2>
-            <ul class="catalog__list list-reset">
+            <ul class="catalog__list list-reset card-catalog__list">
                 <li class="catalog__item">
                     <a href="#" class="catalog__item-link">
                         <picture class="catalog__images">
@@ -148,7 +188,7 @@
                 </li>
             </ul>
 
-            <a href="#" class="category__link">View all</a>
+            <a href="#" class="category__link card-catalog__link">View all</a>
         </div>
     </div>
 
@@ -204,6 +244,9 @@
         </div>
     </div>
 </footer>
-<script src="assets/js/app.min.js"></script>
+<script src="assets/js/menu.min.js"></script>
+<script src="assets/js/search.min.js"></script>
+<script src="assets/js/slider.min.js"></script>
+<script src="assets/js/sliderPreview.js"></script>
 </body>
 </html>

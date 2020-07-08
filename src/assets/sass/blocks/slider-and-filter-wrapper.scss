@@ -1,0 +1,6 @@
+.slider-and-filter-wrapper {
+    display: grid;
+    @media (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+}

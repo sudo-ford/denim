@@ -1,6 +1,11 @@
 .card-filter__wrapper {
     padding: 40px 0;
     background-color: $light;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 0;
+        padding-top: 90px;
+    }
 }
 
 .card-filter {
