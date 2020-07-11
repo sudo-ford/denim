@@ -81,6 +81,10 @@ p {
     @media (min-width: $tablet) {
         padding: 0 45px;
     }
+
+    @media (min-width: $desktop) {
+        padding: 0 100px;
+    }
 }
 
 .page {

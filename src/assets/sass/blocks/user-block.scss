@@ -7,6 +7,15 @@
     &--top {
         grid-area: 2/3/1/4;
     }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .user-block__search {
@@ -37,6 +46,12 @@
         stroke: $hover;
         transition: .2s;
     }
+
+    @media (min-width: $desktop) {
+        order: 1;
+        margin: 0;
+        margin-bottom: 35px;
+    }
 }
 
 .user-block__label {
@@ -44,5 +59,9 @@
     &:hover path,
     &--active path {
         stroke: $hover;
+    }
+
+    @media (min-width: $desktop) {
+        order: 2;
     }
 }

@@ -8,6 +8,10 @@
     &--row {
         grid-template-rows: 60px 0;
     }
+
+    @media (min-width: $desktop) {
+        grid-template-rows: 60px 0;
+    }
 }
 
 .header__button {

@@ -6,6 +6,11 @@
     @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
     }
+
+    @media (min-width: $desktop) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 .fall__text {
@@ -23,6 +28,10 @@
         padding: 50px 0 50px 50px;
 
         text-align: left;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 30px 70px 30px 0;
     }
 }
 

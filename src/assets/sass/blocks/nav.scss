@@ -7,11 +7,30 @@
     &--dn {
         display: none;
     }
+
+    @media (min-width: $desktop) {
+        grid-column: 1/2;
+        margin-top: 220px;
+
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.nav__list {
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .nav__item {
     display: inline-block;
     margin-right: 20px;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 35px;
+    }
 }
 
 .nav__link {
