@@ -1,4 +1,6 @@
 .socials {
+    padding-left: 6px;
+
     @media (min-width: $tablet) {
         text-align: center;
     }
@@ -6,7 +8,7 @@
 
 .socials__link {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 37px;
 
     & path {
         transition: .2s;
@@ -14,5 +16,9 @@
 
     &:hover path {
         fill: $hover;
+    }
+
+    @media (min-width: $tablet) {
+        margin: 0 16px;
     }
 }

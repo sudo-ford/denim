@@ -6,11 +6,30 @@
 
     &--dn {
         display: none;
+
+        @media (min-width: $desktop) {
+            display: block;
+        }
+    }
+
+    &--desktop {
+        @media (min-width: $desktop) {
+            grid-column: 1/2;
+            margin-top: 220px;
+
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        align-self: end;
     }
 
     @media (min-width: $desktop) {
-        grid-column: 1/2;
-        margin-top: 220px;
+        grid-area: 2/1/1/2;
+        align-self: start;
+        margin-top: 112px;
 
         position: relative;
         z-index: 1;
@@ -18,18 +37,30 @@
 }
 
 .nav__list {
-    @media (min-width: $desktop) {
-        display: flex;
-        flex-direction: column;
+    &--desktop {
+        @media (min-width: $desktop) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
 .nav__item {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 25px;
 
-    @media (min-width: $desktop) {
-        margin-bottom: 35px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (min-width: $tablet) {
+        margin-right: 35px;
+    }
+
+    &--desktop {
+        @media (min-width: $desktop) {
+            margin-bottom: 26px;
+        }
     }
 }
 

@@ -7,8 +7,8 @@
 .footer__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 23px 30px;
+    margin-bottom: 36px;
 
     @media (min-width: $tablet) {
         display: flex;
@@ -19,7 +19,16 @@
 
         & .footer__item:first-child {
             width: 100%;
+            margin-bottom: 10px;
+
+            @media (min-width: $desktop) {
+                margin-bottom: 5px;
+            }
         }
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 30px;
     }
 }
 
@@ -36,5 +45,11 @@
     &--big {
         font-size: 24px;
         font-weight: 900;
+    }
+}
+
+.footer__item {
+    @media (min-width: $tablet) {
+        margin: 0 3px;
     }
 }

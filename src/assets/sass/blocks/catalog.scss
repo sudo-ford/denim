@@ -6,6 +6,11 @@
         padding-top: 20px;
         padding-bottom: 100px;
     }
+
+    @media (min-width: $desktop) {
+        padding-top: 40px;
+        padding-bottom: 130px;
+    }
 }
 
 .catalog__list {
@@ -16,6 +21,10 @@
 
     @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: $desktop) {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -33,6 +42,10 @@
 
     @media (min-width: $tablet) {
         grid-area: 4/2/2/-1;
+    }
+
+    @media (min-width: $desktop) {
+        grid-area: 4/3/2/5;
     }
 }
 

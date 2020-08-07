@@ -4,6 +4,13 @@
 
     @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
+        padding-top: 102px;
+        padding-bottom: 71px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 129px;
+        padding-bottom: 103px;
     }
 }
 
@@ -12,13 +19,23 @@
 
     font-size: 26px;
     font-weight: 700;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 59px;
+        font-size: 28px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 71px;
+        font-size: 32px;
+    }
 }
 
 .category__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
 
     @media (min-width: $tablet) {
         grid-area: 3/1/2/3;
@@ -45,15 +62,22 @@
 
 .category__image {
     @media (min-width: $tablet) {
-        margin-bottom: 25px;
+        margin-bottom: 12px;
     }
 }
 
 .category__name {
     display: block;
+    margin-top: 6px;
+    margin-bottom: -5px;
 
     font-weight: 500;
     transition: .2s;
+
+    @media (min-width: $tablet) {
+        margin-bottom: -12px;
+        font-size: 18px;
+    }
 }
 
 .category__link {
@@ -70,7 +94,12 @@
     }
 
     @media (min-width: $tablet) {
-        margin: 0 0 35px auto;
+        margin: -4px 5px 60px auto;
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 70px;
     }
 }
 

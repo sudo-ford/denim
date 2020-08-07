@@ -19,6 +19,7 @@
         "gulp-rigger": "^0.5.8",
         "gulp-sass": "^4.0.2",
         "gulp-strip-css-comments": "^2.0.0",
-        "gulp-uglify-es": "^2.0.0"
+        "gulp-uglify-es": "^2.0.0",
+        "pixel-glass": "^1.0.13"
     }
 }

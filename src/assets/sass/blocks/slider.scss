@@ -25,6 +25,11 @@
         gap: 22px;
         margin-top: 20px;
     }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .slider__button {

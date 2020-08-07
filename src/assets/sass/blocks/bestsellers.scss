@@ -4,6 +4,11 @@
     
     @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
+        padding: 92px 0 66px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 126px 0 95px;
     }
 }
 
@@ -12,16 +17,27 @@
 
     font-size: 26px;
     font-weight: 700;
+
+    @media (min-width: $tablet) {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 71px;
+        font-size: 32px;
+    }
 }
 
 .bestsellers__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 11px 30px;
+    margin-bottom: 16px;
 
     @media (min-width: $tablet) {
         grid-area: 3/1/2/3;
+        gap: 30px;
     }
 
     @media (min-width: $desktop) {
@@ -43,11 +59,22 @@
 
 .bestsellers__name {
     display: block;
-    margin-bottom: 10px;
+    margin-top: 6px;
+    margin-bottom: 2px;
 
     font-weight: 500;
 
     transition: .2s;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+        margin-top: 17px;
+        margin-bottom: 8px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 19px;
+    }
 }
 
 .bestsellers__price {
@@ -55,6 +82,10 @@
 
     font-size: 14px;
     font-weight: 700;
+
+    @media (min-width: $tablet) {
+        font-size: 16px;
+    }
 }
 
 .bestsellers__link {
@@ -71,6 +102,11 @@
     }
 
     @media (min-width: $tablet) {
-        margin: 0 0 35px auto;
+        margin: -4px 6px 60px auto;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 17px;
+        margin-bottom: 70px;
     }
 }

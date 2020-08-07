@@ -9,8 +9,12 @@
         grid-template-rows: 60px 0;
     }
 
+    @media (min-width: $tablet) {
+        grid-template-rows: 70px 56px;
+    }
+
     @media (min-width: $desktop) {
-        grid-template-rows: 60px 0;
+        grid-template-rows: 70px 0;
     }
 }
 
@@ -44,6 +48,10 @@
 
     &:active::before {
         opacity: 0.3;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
     }
 }
 
