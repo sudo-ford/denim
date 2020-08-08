@@ -1,5 +1,6 @@
 .breadcrumbs {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    margin-top: 9px;
 
     @media (min-width: $tablet) {
         display: none;
@@ -22,5 +23,5 @@
 }
 
 .breadcrumbs__slash {
-    margin: 0 10px;
+    margin: 0 6px;
 }

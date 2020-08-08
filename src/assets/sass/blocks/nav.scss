@@ -4,24 +4,6 @@
 
     transition: .5s;
 
-    &--dn {
-        display: none;
-
-        @media (min-width: $desktop) {
-            display: block;
-        }
-    }
-
-    &--desktop {
-        @media (min-width: $desktop) {
-            grid-column: 1/2;
-            margin-top: 220px;
-
-            position: relative;
-            z-index: 1;
-        }
-    }
-
     @media (min-width: $tablet) {
         align-self: end;
     }
@@ -33,6 +15,31 @@
 
         position: relative;
         z-index: 1;
+    }
+
+    &--desktop {
+        @media (min-width: $desktop) {
+            grid-column: 1/2;
+            align-self: start;
+            margin-top: 112px;
+
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &--dn {
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: block;
+            grid-area: 2/1/1/2;
+            align-self: center;
+        }
+
+        @media (min-width: $desktop) {
+            margin-top: 0;
+        }
     }
 }
 

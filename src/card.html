@@ -7,7 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <title>DENIM</title>
+    <title>CARD</title>
+
+    <!-- Pixel Glass -->
+    <style>
+        HTML {
+            background-repeat: no-repeat;
+            background-position:  50% 0;
+            /* По умолчанию мобильный макет */
+            background-image: url( "assets/img/320 Product card.png" );
+        }
+        /* Планшет */
+        @media ( min-width: 768px ) {
+            HTML {
+                /* Планшетный макет */
+                background-image: url( "assets/img/768 Product card.png" );
+            }
+        }
+        /* Десктоп */
+        @media ( min-width: 1366px ) {
+            HTML {
+                /* Десктопный макет */
+                background-image: url( "assets/img/1366 Product card.png" );
+            }
+        }
+
+        BODY {
+            opacity: .2;
+        }
+    </style>
 </head>
 <body class="page">
     <div class="container">
@@ -46,7 +74,7 @@
     </div>
 
     <div class="slider-and-filter-wrapper">
-        <div class="container">
+        <div class="container slider__wrapper">
             <div class="slider">
 
                 <picture class="slider__images">
@@ -142,9 +170,9 @@
                 <li class="catalog__item">
                     <a href="#" class="catalog__item-link">
                         <picture class="catalog__images">
-                            <source media="(max-width: 767px)" srcset="assets/img/catalog-1-mobile.jpg">
-                            <source media="(max-width: 1365px)" srcset="assets/img/catalog-1-tablet.jpg">
-                            <img class="catalog__image" src="assets/img/catalog-1.jpg" alt="">
+                            <source media="(max-width: 767px)" srcset="assets/img/card-catalog-1-mobile.jpg">
+                            <source media="(max-width: 1365px)" srcset="assets/img/card-catalog-1-tablet.jpg">
+                            <img class="catalog__image" src="assets/img/card-catalog-1.jpg" alt="">
                         </picture>
                         <span class="catalog__name">Overalls</span>
                         <span class="catalog__price">$ 140</span>
@@ -154,9 +182,9 @@
                 <li class="catalog__item">
                     <a href="#" class="catalog__item-link">
                         <picture class="catalog__images">
-                            <source media="(max-width: 767px)" srcset="assets/img/catalog-2-mobile.jpg">
-                            <source media="(max-width: 1365px)" srcset="assets/img/catalog-2-tablet.jpg">
-                            <img class="catalog__image" src="assets/img/catalog-2.jpg" alt="">
+                            <source media="(max-width: 767px)" srcset="assets/img/card-catalog-2-mobile.jpg">
+                            <source media="(max-width: 1365px)" srcset="assets/img/card-catalog-2-tablet.jpg">
+                            <img class="catalog__image" src="assets/img/card-catalog-2.jpg" alt="">
                         </picture>
                         <span class="catalog__name">Overalls</span>
                         <span class="catalog__price">$ 110</span>
@@ -166,9 +194,9 @@
                 <li class="catalog__item">
                     <a href="#" class="catalog__item-link">
                         <picture class="catalog__images">
-                            <source media="(max-width: 767px)" srcset="assets/img/catalog-3-mobile.jpg">
-                            <source media="(max-width: 1365px)" srcset="assets/img/catalog-3-tablet.jpg">
-                            <img class="catalog__image" src="assets/img/catalog-3.jpg" alt="">
+                            <source media="(max-width: 767px)" srcset="assets/img/card-catalog-3-mobile.jpg">
+                            <source media="(max-width: 1365px)" srcset="assets/img/card-catalog-3-tablet.jpg">
+                            <img class="catalog__image" src="assets/img/card-catalog-3.jpg" alt="">
                         </picture>
                         <span class="catalog__name">Jacket</span>
                         <span class="catalog__price">$ 70</span>
@@ -178,9 +206,9 @@
                 <li class="catalog__item">
                     <a href="#" class="catalog__item-link">
                         <picture class="catalog__images">
-                            <source media="(max-width: 767px)" srcset="assets/img/catalog-4-mobile.jpg">
-                            <source media="(max-width: 1365px)" srcset="assets/img/catalog-4-tablet.jpg">
-                            <img class="catalog__image" src="assets/img/catalog-4.jpg" alt="">
+                            <source media="(max-width: 767px)" srcset="assets/img/card-catalog-4-mobile.jpg">
+                            <source media="(max-width: 1365px)" srcset="assets/img/card-catalog-4-tablet.jpg">
+                            <img class="catalog__image" src="assets/img/card-catalog-4.jpg" alt="">
                         </picture>
                         <span class="catalog__name">Jacket</span>
                         <span class="catalog__price">$ 60</span>

@@ -1,10 +1,17 @@
 .card-catalog {
     display: grid;
     padding: 60px 0;
+    padding-bottom: 3px;
 
     @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
-        padding: 100px 0;
+        padding-top: 96px;
+        padding-bottom: 63px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 125px;
+        padding-bottom: 94px;
     }
 }
 
@@ -16,13 +23,24 @@
 
     @media (min-width: $tablet) {
         margin-bottom: 60px;
+        font-size: 28px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 73px;
+        font-size: 32px;
     }
 }
 
 .card-catalog__list {
     grid-template-columns: 1fr 1fr;
     grid-area: 3/1/2/-1;
-    gap: 50px 30px;
+    gap: 25px 30px;
+    margin-bottom: 32px;
+
+    @media (min-width: $tablet) {
+        gap: 47px 30px;
+    }
 
     @media (min-width: $desktop) {
         grid-template-columns: repeat(4, 1fr);
@@ -32,4 +50,12 @@
 .card-catalog__link {
     display: inline-block;
     margin-bottom: 57px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 61px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: -3px 4px 71px auto;
+    }
 }

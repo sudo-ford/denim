@@ -4,34 +4,74 @@
 
     @media (min-width: $tablet) {
         padding-bottom: 0;
-        padding-top: 90px;
+        padding-top: 84px;
+        padding-left: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 122px;
+        padding-left: 0;
     }
 }
 
 .card-filter {
     display: grid;
+
+    @media (min-width: $tablet) {
+        margin-right: -5px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-left: -15px;
+    }
 }
 
 .card-filter__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     font-size: 26px;
     font-weight: 700;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 37px;
+        font-size: 28px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 39px;
+        font-size: 32px;
+    }
 }
 
 .card-filter__description {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 
     font-size: 14px;
+    line-height: 117%;
     font-weight: 400;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 44px;
+        line-height: 115%;
+    }
+
+    @media (min-width: $desktop) {
+        padding-right: 135px;
+        font-size: 16px;
+    }
 }
 
 .card-filter__fieldset {
     font-size: 16px;
     font-weight: 500;
     padding: 0;
+    margin: 0;
 
     border: none;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
 }
 
 .card-filter__color {
@@ -56,7 +96,7 @@
     height: 16px;
     margin-right: 20px;
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 
     border-radius: 50%;
 
@@ -74,6 +114,11 @@
     &--3 {
         background-color: #BFC3C8;
     }
+
+    @media (min-width: $tablet) {
+        margin-right: 26px;
+        margin-bottom: 36px;
+    }
 }
 
 .card-filter__size {
@@ -82,9 +127,9 @@
 
 .card-filter__size-label {
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 25px;
-    margin-bottom: 35px;
+    margin-right: 20px;
+    margin-top: 17px;
+    margin-bottom: 27px;
 
     font-size: 14px;
     font-weight: 500;
@@ -93,6 +138,18 @@
 
     cursor: pointer;
     transition: .2s;
+
+    @media (min-width: $tablet) {
+        margin-right: 16px;
+        margin-top: 19px;
+        margin-bottom: 33px;
+
+        font-size: 17px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 21px;
+    }
 }
 
 #size1:checked ~ label[for="size1"] {
@@ -122,8 +179,8 @@
 
 .card-filter__link {
     justify-self: start;
-    padding: 27px 55px;
-    margin-top: 35px;
+    padding: 22px 56px;
+    margin-top: 32px;
 
     color: #fff;
     font-weight: 700;
@@ -136,5 +193,9 @@
     &:hover {
         color: $hover;
         background-color: #fff;
+    }
+
+    @media (min-width: $tablet) {
+        margin-top: 47px;
     }
 }

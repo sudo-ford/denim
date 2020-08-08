@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 25px;
 
-    position: absolute;
+    position: relative;
     z-index: 10;
 
     background-color: #fff;
@@ -113,7 +113,7 @@
         height: 11px;
 
         position: absolute;
-        top: 20px;
+        top: 16px;
         right: 0;
 
         background: url("../img/filter-arrow.png") no-repeat;
@@ -126,23 +126,27 @@
     }
 
     &--open {
-        padding: 16px;
+        padding: 12px;
+        padding-left: 15px;
 
         font-size: 18px;
 
         border: 2px solid $dark;
 
         &::after {
-            right: 20px;
+            right: 14px;
         }
 
         @media (min-width: $tablet) {
             width: 206px;
             margin-left: auto;
+            padding: 14px;
         }
 
         @media (min-width: $desktop) {
-            width: 243px;
+            width: 244px;
+            margin-right: -2px;
+            padding-left: 16px;
         }
     }
 

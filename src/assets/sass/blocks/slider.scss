@@ -1,11 +1,25 @@
 .slider {
     display: grid;
-    padding: 40px 15px;
+    padding: 12px 15px 35px;
 
     position: relative;
 
     @media (min-width: $tablet) {
-        padding: 40px 0 0 0;
+        padding: 33px 0 0 0;
+    }
+
+    @media (min-width: $tablet) {
+        padding-top: 51px;
+    }
+}
+
+.slider__wrapper {
+    @media (min-width: $tablet) {
+        padding-right: 15px;
+    }
+
+    @media (min-width: $tablet) {
+        padding-right: 45px;
     }
 }
 
@@ -22,8 +36,8 @@
     @media (min-width: $tablet) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 22px;
-        margin-top: 20px;
+        gap: 19px;
+        margin-top: 18px;
     }
 
     @media (min-width: $desktop) {
@@ -48,17 +62,15 @@
     }
 
     &--prev {
-        top: 50%;
+        top: 140px;
         left: 0;
 
-        transform: rotate(180deg) translateY(50%);
+        transform: rotate(180deg);
     }
 
     &--next {
-        top: 50%;
-        right: 0;
-
-        transform: translateY(-50%);
+        top: 140px;
+        right: -1px;
     }
 
     & path {
