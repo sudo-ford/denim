@@ -2,11 +2,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 25px;
+    width: available;
+    width: -moz-available;
+    margin: 0 15px;
 
-    position: relative;
+    position: absolute;
     z-index: 10;
 
-    background-color: #fff;
+    background-color: $light;
 
     transition: 2s;
 
@@ -19,15 +22,17 @@
         grid-template-columns: 1fr;
         padding-bottom: 0;
 
-        right: 45px;
-        top: 115px;
+        right: 30px;
+        top: 50px;
 
         border: 2px solid $dark;
         border-top: none;
     }
 
     @media (min-width: $desktop) {
-        width: 243px;
+        width: 244px;
+
+        right: 83px;
     }
 }
 
@@ -113,7 +118,7 @@
         height: 11px;
 
         position: absolute;
-        top: 16px;
+        top: 23px;
         right: 0;
 
         background: url("../img/filter-arrow.png") no-repeat;
@@ -135,6 +140,7 @@
 
         &::after {
             right: 14px;
+            top: 16px;
         }
 
         @media (min-width: $tablet) {
