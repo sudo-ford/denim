@@ -84,7 +84,19 @@
 
         <button class="filter__button button-reset" type="button">Price</button>
         <fieldset class="filter__fieldset filter--dn">
-            <input type="range">
+            <div class="multi-range">
+                <input class="multi-range__input multi-range__input--left" type="range" id="input-left" min="0" max="300" value="40" step="10">
+                <input class="multi-range__input multi-range__input--right" type="range" id="input-right" min="0" max="300" value="240" step="10">
+
+                <div class="multi-range__slider">
+                    <div class="multi-range__track"></div>
+                    <div class="multi-range__range"></div>
+                    <div class="multi-range__thumb multi-range__thumb--left"></div>
+                    <div class="multi-range__thumb multi-range__thumb--right"></div>
+                    <span class="multi-range__price multi-range__price--min">$ 40</span>
+                    <span class="multi-range__price multi-range__price--max">$ 240</span>
+                </div>
+            </div>
         </fieldset>
 
         <button class="filter__button button-reset" type="button">Color</button>
@@ -296,5 +308,6 @@
 <script src="assets/js/filter.min.js"></script>
 <script src="assets/js/menu.min.js"></script>
 <script src="assets/js/search.min.js"></script>
+<script src="assets/js/multi-range.js"></script>
 </body>
 </html>

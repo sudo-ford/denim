@@ -1,0 +1,82 @@
+.multi-range {
+    position: relative;
+}
+
+.multi-range__input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    margin: 0;
+    
+    position: absolute;
+    top: 40px;
+
+    background-color: transparent;
+    
+    outline: none;
+
+    z-index: 10;
+
+    &--left {
+        top: 39px;
+    }
+    
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 17px;
+        height: 17px;
+
+        background-color: black;
+        border: none;
+        border-radius: 50%;
+
+        cursor: pointer;
+    }
+}
+
+.multi-range__slider {
+    height: 50px;
+    padding: 40px 0;
+
+    position: relative;
+}
+
+.multi-range__track {
+    height: 2px;
+
+    background-color: $gray;
+}
+
+.multi-range__range {
+    height: 2px;
+
+    position: absolute;
+    top: 40px;
+
+    background-color: black;
+
+    z-index: 2;
+}
+
+.multi-range__thumb {
+    width: 16px;
+    height: 16px;
+
+    background-color: black;
+    border-radius: 50%;
+
+    position: absolute;
+
+    &--left {
+        top: 33px;
+    }
+
+    &--right {
+        top: 33px;
+    }
+}
+
+.multi-range__price {
+    position: absolute;
+    top: 50px;
+}
