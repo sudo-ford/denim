@@ -70,8 +70,8 @@ const css = () => {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
-            Browserslist: ['last 8 versions'],
-            cascade: true
+            browsers: ['last 5 versions'],
+            cascade: false
         }))
         .pipe(dest(path.build.css))
         .pipe(cssnano({

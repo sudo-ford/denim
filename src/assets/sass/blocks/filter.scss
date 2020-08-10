@@ -2,8 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 25px;
-    width: available;
-    width: -moz-available;
+    width: calc(100% - 30px);
     margin: 0 15px;
 
     position: absolute;

@@ -15,7 +15,8 @@ function setLeftValue() {
 
     _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
 
-    const percent = ((_this.value - min) / (max - min)) * 100;
+    //const percent = ((_this.value - min) / (max - min)) * 100;
+    const percent = 100 / _this.max * _this.value;
 
     thumbLeft.style.left = percent + "%";
     range.style.left = percent + "%";
@@ -31,7 +32,8 @@ function setRightValue() {
 
     _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
 
-    const percent = ((_this.value - min) / (max - min)) * 100;
+    //const percent = ((_this.value - min) / (max - min)) * 100;
+    const percent = 100 / _this.max * _this.value;
 
     thumbRight.style.right = (100 - percent) + "%";
     range.style.right = (100 - percent) + "%";
@@ -42,3 +44,10 @@ setRightValue();
 
 inputLeft.addEventListener("input", setLeftValue);
 inputRight.addEventListener("input", setRightValue);
+
+if (navigator.userAgent.search(/Firefox/) > 0) {
+    const inputs = document.querySelectorAll(".multi-range__input");
+    for (let input of inputs) {
+        input.style.pointerEvents = "auto";
+    }
+}
