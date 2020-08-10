@@ -16,6 +16,7 @@ filterCloseButton.addEventListener("click", () => {
 for (let filterButton of filterButtons) {
     filterButton.addEventListener("click", () => {
         filterButton.classList.toggle("filter__button--opened");
+        filterButton.classList.toggle("filter__button--borderBottom");
         filterButton.nextElementSibling.classList.toggle("filter--dn");
     })
 }
